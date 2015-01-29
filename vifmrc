@@ -135,6 +135,7 @@ filetype *.asc
 
 filetype *.torrent ktorrent %f &
 fileviewer *.torrent dumptorrent -v %c
+
 filetype *.zip,*.jar,*.war,*.ear,*.oxt
        \ {Mount with fuse-zip}
        \ FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR,
@@ -144,6 +145,7 @@ filetype *.zip,*.jar,*.war,*.ear,*.oxt
        \ tar -xf %c,
 
 fileviewer *.zip,*.jar,*.war,*.ear,*.oxt zip -sf %c
+
 filetype *.tar,*.tar.bz2,*.tbz2,*.tgz,*.tar.gz,*.tar.xz,*.txz
        \ {Mount with archivemount}
        \ FUSE_MOUNT|archivemount %SOURCE_FILE %DESTINATION_DIR,
@@ -178,10 +180,6 @@ fileviewer *.doc catdoc %c
 fileviewer *.docx, docx2txt.pl %f -
 filetype *.tudu tudu -f %c
 filextype *.pro qtcreator %f &
-filextype */
-        \ {View in thunar}
-        \ Thunar %f &,
-
 fileviewer .*/,*/ tree %f
 " }}}
 
