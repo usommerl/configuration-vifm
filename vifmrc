@@ -133,8 +133,7 @@ filetype *.asc
        \ {Check signature}
        \ !!gpg --verify %c,
 
-filetype *.torrent ktorrent %f &
-fileviewer *.torrent dumptorrent -v %c
+fileviewer *.torrent transmission-show %f
 
 filetype *.zip,*.jar,*.war,*.ear,*.oxt
        \ {Mount with fuse-zip}
