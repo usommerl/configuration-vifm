@@ -92,8 +92,6 @@ filetype *.wav,*.mp3,*.flac,*.ogg,*.m4a,*.wma,*.ape,*.ac3
        \ mplayer %f,
        \ ffplay %c,
 
-fileviewer *.mp3 mp3info
-fileviewer *.flac soxi
 filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2v,*.mov,*.webm,*.ts,*.m4v
         \ {View using mplayer}
         \ mplayer -really-quiet %f &,
@@ -102,7 +100,8 @@ filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2v,*.mo
         \ {View using Dragon}
         \ dragon %f,
 
-fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2v,*.mov,*.webm,*.ts,*.m4v
+fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2v,*.mov,*.webm,*.ts,*.m4v,*.mp3,*.flac
+         \ mediainfo %c,
          \ ffprobe -pretty %c 2>&1
 
 filextype *.html,*.htm
@@ -185,3 +184,5 @@ filextype */
 
 fileviewer .*/,*/ tree %f
 " }}}
+
+" vim:ft=vim:foldmethod=marker
