@@ -55,7 +55,7 @@ nnoremap T :!urxvtc -cd %d<cr>
 nnoremap S :sort<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
-nnoremap o :!urxvtc -e vim --servername vim --remote-silent %f<cr>
+nnoremap o :!urxvtc -e vim --servername $VIM_SERVERNAME --remote-silent %f<cr>
 nnoremap O :!urxvtc -e vim %f<cr>
 nnoremap gb :file &<cr>l
 nnoremap yd :!echo %d | xclip -selection clipboard %i<cr>
