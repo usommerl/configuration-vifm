@@ -14,6 +14,8 @@ set fusehome=/tmp/vifm_FUSE
 set timefmt=%Y-%m-%d\ %H:%M
 set wildmenu
 set ignorecase
+windo set relativenumber
+windo set number
 set smartcase
 set nohlsearch
 set incsearch
