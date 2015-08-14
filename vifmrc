@@ -25,6 +25,7 @@ set statusline=" %t%= %A %10u:%-7g %15s %20d "
 set grepprg="ack\ -H\ -r\ %i\ %a\ %s"
 set rulerformat="%2l/%S [%0-] "
 set tuioptions-=s
+set dotdirs="rootparent"
 set vifminfo=dhistory,chistory,state,tui,shistory,
     \phistory,fhistory,dirstack,registers,bookmarks
 
