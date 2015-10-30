@@ -36,8 +36,10 @@ windo set viewcolumns=-{name}..,20{}.
 " {{{ Bookmarks
 mark r /
 mark h ~/
-mark d ~/downloads
+mark t ~/tickets
+mark d ~/Downloads
 mark c ~/.dotfiles
+mark p ~/repos
 mark m /mnt
 " }}}
 
