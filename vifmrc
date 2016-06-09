@@ -1,5 +1,5 @@
 " {{{ Options
-set vicmd=vim
+set vicmd=nvim
 set trash
 set trashdir=%r/.vifm-Trash,$HOME/.vifm/trash
 set history=100
