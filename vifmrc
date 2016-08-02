@@ -56,7 +56,7 @@ command! reload :write | restart
 
 " {{{ Keys
 nnoremap s :shell<cr>
-nnoremap T :!urxvt -cd %d<cr>
+nnoremap T :!urxvt -cd %d &<cr>
 nnoremap S :sort<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
