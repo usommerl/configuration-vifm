@@ -99,7 +99,7 @@ filetype *.wav,*.mp3,*.flac,*.ogg,*.m4a,*.wma,*.ape,*.ac3
 
 filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2v,*.mov,*.webm,*.ts,*.m4v
         \ {View using mpv}
-        \ mpv -really-quiet %f &,
+        \ mpv --really-quiet --msglevel=all=no &>/dev/null %f &,
         \ {View using mplayer}
         \ mplayer -really-quiet %f &,
         \ {View using ffplay}
