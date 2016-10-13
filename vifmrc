@@ -55,9 +55,10 @@ command! reload :write | restart
 " }}}
 
 " {{{ Keys
-nnoremap s :shell<cr>
+nnoremap S :shell<cr>
 nnoremap T :!urxvt -cd %d &<cr>
-nnoremap S :sort<cr>
+nnoremap s :sort<cr>
+nnoremap r :invert o<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 nnoremap o :!nvr --remote-silent %f<cr>
