@@ -58,6 +58,7 @@ command! reload :write | restart
 nnoremap T :!urxvt -cd %d &<cr>
 nnoremap S :sort<cr>
 nnoremap R :invert o<cr>
+nnoremap <C-w>m :sync<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 nnoremap o :!nvr --remote-silent %f<cr>
