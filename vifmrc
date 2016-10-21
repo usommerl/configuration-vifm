@@ -75,6 +75,7 @@ nnoremap ,c :copy<cr>
 nnoremap ,m :move<cr>
 nnoremap ,b :set viewcolumns=-{name}..,20{}.<cr>
 nnoremap ,d :set viewcolumns=-{name}.,10{perms},12{uname},-7{gname},10{size}.,20{mtime}<cr>
+nnoremap ,D :diff<cr>
 " }}}
 
 " {{{ File Associations
