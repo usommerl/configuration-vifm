@@ -56,7 +56,7 @@ command! qa :q
 
 " {{{ Keys
 nnoremap s :shell<cr>
-nnoremap T :!urxvtc -cd %d<cr>
+nnoremap T :!urxvt -cd %d 2> /dev/null &<cr>
 nnoremap S :sort<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
