@@ -76,7 +76,7 @@ nnoremap ,d :set viewcolumns=-{name}.,10{perms},12{uname},-7{gname},10{size}.,20
 " }}}
 
 " {{{ File Associations
-filextype *.doc,*.docx,*.xsl,*.xslx,*.ppt,*.pptx,*.ods,*.ots,*.odt,*.ott,*.odp,*.otp,*.odm libreoffice %f &
+filextype *.doc,*.docx,*.xls,*.xlsx,*.ppt,*.pptx,*.ods,*.ots,*.odt,*.ott,*.odp,*.otp,*.odm libreoffice %f &
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
 fileviewer *.pdf pdftotext -nopgbrk %c -
 filextype *.ps,*.eps,*.ps.gz
