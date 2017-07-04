@@ -64,6 +64,7 @@ nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 nnoremap o :!nvr --remote-silent %f<cr>
 nnoremap O :!urxvt -e nvim %f<cr>
+nnoremap <C-p> :!lp %f<cr>
 nnoremap gb :file &<cr>l
 nnoremap yd :!echo %d | xclip -selection clipboard %i<cr>
 nnoremap yf :!echo %c:p | xclip -selection clipboard %i<cr>
