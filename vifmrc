@@ -138,6 +138,9 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in gpicview}
         \ gpicview %c,
 
+filextype *.svg
+        \ inkview %f &
+
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm convert -identify %f -verbose /dev/null
 filetype *.md5
        \ {Check MD5 hash sum}
