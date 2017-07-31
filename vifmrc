@@ -139,7 +139,7 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ gpicview %c,
 
 filextype *.svg
-        \ inkview %f &
+        \ inkview %f &>/dev/null &
 
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm convert -identify %f -verbose /dev/null
 filetype *.md5
