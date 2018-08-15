@@ -68,6 +68,7 @@ nnoremap <C-p> :!lp %f<cr>
 nnoremap gb :file &<cr>l
 nnoremap yd :!echo %d | xclip -selection clipboard %i<cr>
 nnoremap yf :!echo %c:p | xclip -selection clipboard %i<cr>
+nnoremap yn :!echo -n %c | xclip -selection clipboard %i<cr>
 nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
 nnoremap A cw<c-w>
