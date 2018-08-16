@@ -130,11 +130,11 @@ filetype *.html,*.htm links, lynx
 filetype *.o nm %f | less
 filetype *.[1-8] gtbl %c | groff -Tascii -man | less
 fileviewer *.[1-8] gtbl %c | groff -Tascii -man | col -b
-filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.tif
+        \ {View in feh}
+        \ feh -Tdefault %c %d &>/dev/null &,
         \ {View in sxiv}
         \ sxiv -s f -b %f &,
-        \ {View in feh}
-        \ feh -Tdefault %f &,
         \ {View in gpicview}
         \ gpicview %c,
 
