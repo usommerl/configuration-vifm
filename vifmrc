@@ -56,14 +56,14 @@ command! qa :q
 
 " {{{ Keys
 nnoremap s :shell<cr>
-nnoremap T :!urxvt -cd %d 2> /dev/null &<cr>
+nnoremap T :!alacritty --working-directory %d 2> /dev/null &<cr>
 nnoremap S :sort<cr>
 nnoremap R :invert o<cr>
 nnoremap <C-w>m :sync<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 nnoremap o :!nvr --remote-silent %f<cr>
-nnoremap O :!urxvt -e nvim %f &<cr>
+nnoremap O :!alacritty --command nvim %f &<cr>
 nnoremap <C-p> :!lp %f<cr>
 nnoremap gb :file &<cr>l
 nnoremap yd :!echo %d | xclip -selection clipboard %i<cr>
