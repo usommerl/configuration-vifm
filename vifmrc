@@ -117,17 +117,6 @@ fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2v,*.m
          \ mediainfo %c,
          \ ffprobe -pretty %c 2>&1
 
-filextype *.html,*.htm
-        \ {Open with chromium}
-        \ chromium %f &,
-        \ {Open with firefox}
-        \ firefox %f &,
-        \ {Open with uzbl}
-        \ uzbl-browser %f %i &,
-        \ {Open with dwb}
-        \ dwb %f %i &,
-
-filetype *.html,*.htm links, lynx
 filetype *.o nm %f | less
 filetype *.[1-8] gtbl %c | groff -Tascii -man | less
 fileviewer *.[1-8] gtbl %c | groff -Tascii -man | col -b
