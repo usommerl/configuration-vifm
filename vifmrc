@@ -90,6 +90,9 @@ filextype *.ps,*.eps,*.ps.gz
         \ {View in gv}
         \ gv %c %i &,
 
+filextype *.desktop
+        \ open-desktop-file %f > /dev/null 2>&1 &
+
 filextype *.djvu
         \ {View in zathura}
         \ zathura %f,
