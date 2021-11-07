@@ -83,7 +83,6 @@ nnoremap ,D :diff<cr>
 " {{{ File Associations
 filextype *.doc,*.docx,*.xls,*.xlsx,*.ppt,*.pptx,*.ods,*.ots,*.odt,*.ott,*.odp,*.otp,*.odm libreoffice %f &
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
-fileviewer *.pdf pdftotext -nopgbrk %c -
 filextype *.ps,*.eps,*.ps.gz
         \ {View in zathura}
         \ zathura %f,
@@ -116,10 +115,6 @@ filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2v,*.mo
         \ {View using Dragon}
         \ dragon %f,
 
-fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2v,*.mov,*.webm,*.m4v,*.mp3,*.flac
-         \ mediainfo %c,
-         \ ffprobe -pretty %c 2>&1
-
 filetype *.o nm %f | less
 filetype *.[1-8] gtbl %c | groff -Tascii -man | less
 fileviewer *.[1-8] gtbl %c | groff -Tascii -man | col -b
@@ -134,7 +129,43 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.tif
 filextype *.svg
         \ inkview %f &>/dev/null &
 
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm convert -identify %f -verbose /dev/null
+" vifmimg
+fileviewer *.pdf
+    \ vifmimg pdf %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+
+fileviewer *.djvu
+    \ vifmimg djvu %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer *.epub
+    \ vifmimg epub %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer <video/*>
+    \ vifmimg video %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer <image/*>
+    \ vifmimg draw %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer <audio/*>
+    \ vifmimg audio %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer <font/*>
+    \ vifmimg font %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
 filetype *.md5
        \ {Check MD5 hash sum}
        \ md5sum -c %f,
