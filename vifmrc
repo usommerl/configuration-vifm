@@ -52,6 +52,7 @@ command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart
 command! qa :q
+command! zoxide :set noquickview | execute 'cd' fnameescape(system('zoxide query -l | fzf --height 20 2>/dev/tty || echo "%d"')) '%IU' | norm :redraw<cr>
 " }}}
 
 " {{{ Keys
@@ -78,6 +79,11 @@ nnoremap ,m :move<cr>
 nnoremap ,b :set viewcolumns=-{name}..,20{}.<cr>
 nnoremap ,d :set viewcolumns=-{name}.,10{perms},12{uname},-7{gname},10{size}.,20{mtime}<cr>
 nnoremap ,D :diff<cr>
+nnoremap <silent>Z :zoxide<cr>
+" }}}
+
+" {{{ Autocmd
+autocmd DirEnter * !zoxide add %d %i
 " }}}
 
 " {{{ File Associations
