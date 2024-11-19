@@ -182,7 +182,7 @@ filetype *.asc
 
 fileviewer *.torrent transmission-show %f
 
-filetype *.zip,*.jar,*.war,*.ear,*.oxt
+filetype *.zip,*.jar,*.war,*.ear,*.oxt,*.apk
        \ {Mount with fuse-zip}
        \ FUSE_MOUNT|fuse-zip -o allow_other %SOURCE_FILE %DESTINATION_DIR,
        \ {View contents}
