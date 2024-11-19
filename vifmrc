@@ -218,7 +218,7 @@ filetype *.ftp
 
 filetype *.7z
        \ {Mount with fuse-7z}
-       \ FUSE_MOUNT|fuse-7z %SOURCE_FILE %DESTINATION_DIR,
+       \ fuse3-p7zip %SOURCE_FILE %DESTINATION_DIR,
 
 fileviewer *.7z 7z l %c
 filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx libreoffice %f &
