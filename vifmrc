@@ -124,7 +124,7 @@ filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2v,*.mo
 filetype *.o nm %f | less
 filetype *.[1-8] gtbl %c | groff -Tascii -man | less
 fileviewer *.[1-8] gtbl %c | groff -Tascii -man | col -b
-filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.tif
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.tif,*.heic
         \ {View in feh}
         \ feh -Tdefault %c %d &>/dev/null &,
         \ {View in sxiv}
